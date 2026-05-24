@@ -73,7 +73,7 @@ Prometheus is used for collecting and storing metrics.
 
 ## cAdvisor
 cAdvisor is used for monitoring container resources.
-![cAdvisor Documentation](./images/metrics_cadvisor.png)
+![cAdvisor Metrics](./images/cadvisor_metrics.png)
 ![cAdvisor Documentation](./images/cadvisor.png)
 ![cAdvisor Documentation](./images/memory_cadvisor.png)
 ![cAdvisor Documentation](./images/cadvisor_cpu.png)
@@ -81,4 +81,5 @@ cAdvisor is used for monitoring container resources.
 
 ## Uptime Kuma
 Uptime Kuma is used for monitoring the uptime of the infrastructure.
-![Uptime Kuma Documentation](./images/uptime_kuma.png)
+![Uptime Kuma Documentation](./images/Uptime_Kuma.png)
+![Uptime Kuma Monitoring](./images/Uptime_Kuma_Monitor.png)

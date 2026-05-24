@@ -55,8 +55,21 @@ services:
     networks:
       - infraforge
 
+  uptime-kuma:
+    image: louislam/uptime-kuma:latest
+    container_name: uptime-kuma
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    volumes:
+      - uptime_kuma_data:/app/data
+    networks:
+      - infraforge
+
+
 networks:
   infraforge:
 
 volumes:
   grafana_data:
+  uptime_kuma_data:
