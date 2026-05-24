@@ -64,7 +64,7 @@ Nginx Reverse Proxy
 
 ## Grafana
 Grafana is used for visualizing metrics from Prometheus.
-![Grafana Documentation](./images/grafana_metrix.png)
+![Grafana Documentation](./images/graphana_metrix.png)
 ![Grafana Documentation](./images/infrastructure_monitoring.png)
 
 ## Prometheus
