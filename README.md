@@ -62,3 +62,23 @@ Nginx Reverse Proxy
 - SSL automation
 - VPN access
 
+## Grafana
+Grafana is used for visualizing metrics from Prometheus.
+([Grafana Documentation](./images/grafana_metrics.png))
+([Grafana Documentation](./images/infrastructure_monitoring.png))
+
+## Prometheus
+Prometheus is used for collecting and storing metrics.
+([Prometheus Documentation](./images/prometheus_cadvisor.png))
+
+## cAdvisor
+cAdvisor is used for monitoring container resources.
+([cAdvisor Documentation](./images/metrics_cadvisor.png))
+([cAdvisor Documentation](./images/cadvisor.png))
+([cAdvisor Documentation](./images/memory_cadvisor.png))
+([cAdvisor Documentation](./images/cadvisor_cpu.png))
+
+
+## Uptime Kuma
+Uptime Kuma is used for monitoring the uptime of the infrastructure.
+([Uptime Kuma Documentation](./images/uptime_kuma.png))
