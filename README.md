@@ -90,3 +90,10 @@ Uptime Kuma is used for monitoring the uptime of the infrastructure.
 ## Nginx
 Nginx is used as a reverse proxy for the infrastructure services.![Nginx Documentation](./images/nginx.png)
 ![Nginx Monitoring](./images/add_hosts.png)
+
+
+# Portainer
+Portainer is used for managing Docker containers.![Portainer Documentation](./images/portainer.png)
+
+# Adminer
+Adminer is used for managing PostgreSQL databases.![Adminer Documentation](./images/adminer.png)

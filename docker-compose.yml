@@ -66,6 +66,7 @@ services:
     networks:
       - infraforge
 
+  # Nginx is used as a reverse proxy for the infrastructure services
   nginx:
     image: nginx:latest
     container_name: nginx
@@ -80,6 +81,47 @@ services:
       - uptime-kuma
     networks:
       - infraforge
+      
+  # Portainer is a web UI for managing Docker containers
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: unless-stopped
+    ports:
+      - "9443:9443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:z
+      - portainer_data:/data
+    security_opt:
+          - label=disable 
+    networks:
+      - infraforge
+
+  postgres:
+    image: postgres:16
+    container_name: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: infraforge
+      POSTGRES_PASSWORD: infraforge_password
+      POSTGRES_DB: infraforge_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - infraforge
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    restart: unless-stopped
+    ports:
+      - "8081:8080"
+    depends_on:
+      - postgres
+    networks:
+      - infraforge
 
 networks:
   infraforge:
@@ -87,3 +129,5 @@ networks:
 volumes:
   grafana_data:
   uptime_kuma_data:
+  portainer_data:
+  postgres_data:
