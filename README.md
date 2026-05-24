@@ -85,3 +85,8 @@ cAdvisor is used for monitoring container resources.
 Uptime Kuma is used for monitoring the uptime of the infrastructure.
 ![Uptime Kuma Documentation](./images/Uptime_Kuma.png)
 ![Uptime Kuma Monitoring](./images/Uptime_Kuma_Monitor.png)
+
+
+## Nginx
+Nginx is used as a reverse proxy for the infrastructure services.![Nginx Documentation](./images/nginx.png)
+![Nginx Monitoring](./images/add_hosts.png)
