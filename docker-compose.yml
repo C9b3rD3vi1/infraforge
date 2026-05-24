@@ -66,6 +66,20 @@ services:
     networks:
       - infraforge
 
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - grafana
+      - prometheus
+      - uptime-kuma
+    networks:
+      - infraforge
 
 networks:
   infraforge:

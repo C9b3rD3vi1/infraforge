@@ -1,6 +1,8 @@
 # InfraForge
 Enterprise-style infrastructure homelab built using Docker, Nginx, monitoring tools, database and automation scripts
 
+![Grafana Documentation](./images/graphana_metrix.png)
+
 ## Overview
 
 InfraForge is a personal infrastructure engineering lab designed to simulate real-world operational environments.
