@@ -407,7 +407,8 @@ infraforge/
 ## 1. Clone Repository
 
 ```bash id="jz6k3x"
-git clone <repository-url>
+git clone https://github.com/C9b3rD3vi1/infraforge.git
+
 cd infraforge
 ```
 
@@ -547,6 +548,12 @@ docker ps
 ## Redis Service
 
 ![Redis](./images/redis.png)
+
+---
+
+## Logging
+
+![Logging](./images/loki_loggs_monitor.png)
 
 ---
 
