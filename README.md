@@ -556,6 +556,12 @@ docker ps
 ![Logging](./images/loki_loggs_monitor.png)
 
 ---
+## Telegram Alerting
+
+![Telegram Alerting](./images/alert01.png)
+![Telegram Alerting](./images/alert.png)
+
+---
 
 # Operational Concepts Learned
 
