@@ -97,3 +97,11 @@ Portainer is used for managing Docker containers.![Portainer Documentation](./im
 
 # Adminer
 Adminer is used for managing PostgreSQL databases.![Adminer Documentation](./images/adminer.png)
+
+# Postgres
+Postgres is used for managing PostgreSQL databases.![Postgres Documentation](./images/adminer.png)
+
+# Redis
+Redis is used for caching and session management.![Redis Documentation](./images/redis.png)
+
+
